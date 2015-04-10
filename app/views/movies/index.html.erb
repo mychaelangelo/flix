@@ -7,7 +7,7 @@
           <h2><%= link_to movie.title, movie %> (<%= movie.released_on.year %>)</h2>
           <h3><%= movie.cast %></h3>
         </header>
-        <h3>Average Review: <%= format_average_stars(movie) %></h3>
+        <h4>Average Review: <%= format_average_stars(movie) %></h4>
         <p>
           <%= truncate(movie.description, length: 150, separator: ' ') %>
         </p>
